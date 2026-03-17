@@ -6,471 +6,430 @@
 export const resumeHTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Christopher Kenreigh – Senior Product Designer</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Christopher Kenreigh – Staff Product Designer</title>
 
-    :root {
-      --blue: #2563c7;
-      --dark: #111111;
-      --mid: #444444;
-      --light: #666666;
-      --rule: #dddddd;
-      --bg: #ffffff;
-      --sidebar-bg: #f7f8fa;
-    }
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 10.5pt;
-      color: var(--dark);
-      background: #e8e8e8;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 32px 16px;
-      min-height: 100vh;
-    }
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 
-    .page {
-      background: var(--bg);
-      width: 850px;
-      max-width: 100%;
-      box-shadow: 0 4px 40px rgba(0,0,0,0.18);
-      display: grid;
-      grid-template-rows: auto 1fr;
-    }
+:root{
+--blue:#2563c7;
+--dark:#111111;
+--mid:#444444;
+--light:#666666;
+--rule:#dddddd;
+--green:#00A000;
+--bg-tint:#f7f8fa;
+}
 
-    /* ── HEADER ── */
-    header {
-      padding: 28px 36px 18px;
-      border-bottom: 2px solid var(--rule);
-    }
-    header h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: clamp(20pt, 5vw, 30pt);
-      font-weight: 400;
-      color: var(--dark);
-      letter-spacing: -0.5px;
-      line-height: 1.1;
-    }
-    header .title-line {
-      font-size: clamp(9pt, 2.5vw, 11pt);
-      font-weight: 700;
-      color: var(--blue);
-      margin: 3px 0 8px;
-      letter-spacing: 0.2px;
-    }
-    header .contact {
-      font-size: 9.5pt;
-      color: var(--mid);
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    header .contact a {
-      color: var(--blue);
-      text-decoration: none;
-      font-weight: 500;
-    }
-    header .contact span { color: var(--rule); }
+body{
+font-family:'DM Sans',sans-serif;
+font-size:10.5pt;
+color:var(--dark);
+background:#e8e8e8;
+display:flex;
+justify-content:center;
+padding:32px 16px;
+min-height:100vh;
+}
 
-    /* ── BODY LAYOUT ── */
-    .body {
-      display: grid;
-      grid-template-columns: 1fr 240px;
-    }
+.page{
+background:#fff;
+width:680px;
+max-width:100%;
+box-shadow:0 4px 40px rgba(0,0,0,.15);
+}
 
-    /* ── LEFT (Experience) ── */
-    .main {
-      padding: 24px 36px 32px;
-      border-right: 1px solid var(--rule);
-    }
+/* HEADER */
 
-    .section-title {
-      font-family: 'DM Serif Display', serif;
-      font-size: 14pt;
-      font-weight: 400;
-      color: var(--dark);
-      border-bottom: 1.5px solid var(--dark);
-      padding-bottom: 4px;
-      margin-bottom: 14px;
-    }
+header{
+padding:28px 36px 20px;
+border-bottom:2px solid var(--rule);
+}
 
-    .job { margin-bottom: 20px; }
+header h1{
+font-family:'DM Serif Display',Georgia,serif;
+font-size:28pt;
+font-weight:400;
+color:var(--dark);
+letter-spacing:-.5px;
+line-height:1.1;
+}
 
-    .job-title {
-      font-size: 10.5pt;
-      font-weight: 700;
-      color: var(--dark);
-    }
-    .job-company {
-      font-size: 10pt;
-      font-weight: 500;
-      color: var(--blue);
-      text-decoration: none;
-    }
-    .job-company:hover { text-decoration: underline; }
+.title-line{
+font-size:10pt;
+font-weight:700;
+color:var(--blue);
+margin:5px 0 10px;
+}
 
-    .job-meta {
-      font-size: 8.5pt;
-      color: var(--light);
-      margin: 2px 0 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-    .job-meta .material-symbols-outlined {
-      color: #00A000;
-      font-size: 16px;
-      vertical-align: middle;
-    }
+.contact{
+font-size:9pt;
+color:var(--mid);
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:6px 10px;
+}
 
-    .job ul {
-      list-style: disc;
-      padding-left: 16px;
-    }
-    .job ul li {
-      font-size: 9.5pt;
-      color: var(--mid);
-      line-height: 1.5;
-      margin-bottom: 3px;
-    }
+.contact .phone{color:#212121;font-weight:700;}
+.contact .sep{color:var(--rule);}
+.contact a{color:var(--blue);text-decoration:none;font-weight:600;}
+.contact a:hover{text-decoration:underline;}
 
-    /* ── RIGHT (Sidebar) ── */
-    .sidebar {
-      background: var(--sidebar-bg);
-      padding: 24px 22px 32px;
-    }
+/* SECTIONS */
 
-    .sidebar-section { margin-bottom: 22px; }
+.section{
+padding:22px 36px;
+border-bottom:1px solid var(--rule);
+}
 
-    .sidebar .section-title {
-      font-size: 12pt;
-      border-bottom-color: var(--mid);
-    }
+.section:last-child{border-bottom:none;}
 
-    .summary-quote {
-      font-size: 9.5pt;
-      font-style: italic;
-      color: var(--mid);
-      line-height: 1.6;
-      margin-bottom: 10px;
-    }
+.section-title{
+font-family:'DM Serif Display',Georgia,serif;
+font-size:14pt;
+font-weight:400;
+color:var(--dark);
+border-bottom:1.5px solid var(--dark);
+padding-bottom:4px;
+margin-bottom:14px;
+}
 
-    .summary-bullets {
-      list-style: disc;
-      padding-left: 14px;
-    }
-    .summary-bullets li {
-      font-size: 8.8pt;
-      color: var(--mid);
-      line-height: 1.55;
-      margin-bottom: 3px;
-    }
+/* SUMMARY */
 
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-top: 6px;
-    }
-    .tag {
-      font-size: 8pt;
-      font-weight: 500;
-      color: var(--blue);
-      background: rgba(37,99,199,0.08);
-      border-radius: 3px;
-      padding: 2px 7px;
-    }
+.summary-quote{
+font-size:9.5pt;
+font-style:italic;
+font-weight:700;
+color:#212121;
+line-height:1.65;
+margin-bottom:10px;
+}
 
-    .dot-list {
-      list-style: disc;
-      padding-left: 14px;
-    }
-    .dot-list li {
-      font-size: 9pt;
-      color: var(--mid);
-      line-height: 1.6;
-    }
+.summary-bullets{
+list-style:disc;
+padding-left:17px;
+}
 
-    /* Education */
-    .edu-degree {
-      font-size: 9.5pt;
-      font-weight: 700;
-      color: var(--dark);
-    }
-    .edu-school {
-      font-size: 9pt;
-      color: var(--blue);
-      font-weight: 500;
-    }
-    .edu-meta {
-      font-size: 8.5pt;
-      color: var(--light);
-      margin-top: 4px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      flex-wrap: wrap;
-    }
-    .edu-meta .material-symbols-outlined {
-      color: #00A000;
-      font-size: 15px;
-      vertical-align: middle;
-    }
+.summary-bullets li{
+font-size:9pt;
+color:var(--mid);
+line-height:1.55;
+margin-bottom:3px;
+}
 
-    /* ── MOBILE RESPONSIVE ── */
-    @media (max-width: 680px) {
-      body {
-        padding: 0;
-        background: var(--bg);
-        align-items: stretch;
-      }
-      .page {
-        width: 100%;
-        box-shadow: none;
-        border-radius: 0;
-      }
-      header { padding: 20px 18px 14px; }
-      header h1 { font-size: 22pt; }
-      header .title-line { font-size: 9pt; }
-      header .contact { font-size: 9pt; gap: 6px; row-gap: 4px; }
-      .body {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-      }
-      .main {
-        padding: 18px 18px 24px;
-        border-right: none;
-        border-bottom: 1px solid var(--rule);
-        order: 2;
-      }
-      .sidebar {
-        padding: 18px 18px 20px;
-        order: 1;
-        border-bottom: 2px solid var(--rule);
-      }
-      .section-title { font-size: 13pt; }
-      .sidebar .section-title { font-size: 11pt; }
-      .job ul li { font-size: 9pt; }
-      .job-meta { font-size: 8pt; gap: 4px; }
-      .summary-quote { font-size: 9pt; }
-      .tag { font-size: 7.5pt; }
-    }
+/* EXPERIENCE */
 
-    @media (min-width: 681px) and (max-width: 900px) {
-      body { padding: 16px 8px; }
-      .page { width: 100%; }
-      header { padding: 22px 24px 14px; }
-      .main { padding: 20px 24px 28px; }
-      .sidebar { padding: 20px 16px 28px; }
-      .body { grid-template-columns: 1fr 200px; }
-    }
+.job{margin-bottom:20px;}
+.job:last-child{margin-bottom:0;}
 
-    @media print {
-      body { background: white; padding: 0; }
-      .page { box-shadow: none; width: 100%; }
-    }
-  </style>
+.job-title{
+font-size:10.5pt;
+font-weight:700;
+color:var(--dark);
+}
+
+.job-company{
+display:block;
+font-size:10pt;
+font-weight:500;
+color:var(--blue);
+text-decoration:none;
+}
+
+.job-company:hover{text-decoration:underline;}
+
+.job-meta{
+font-size:8.5pt;
+color:var(--light);
+margin:3px 0 7px;
+display:flex;
+align-items:center;
+flex-wrap:wrap;
+gap:4px;
+}
+
+.job-meta svg{
+width:13px;
+height:13px;
+fill:var(--green);
+flex-shrink:0;
+position:relative;
+top:-1px;
+}
+
+.meta-dot{color:var(--rule);margin:0 2px;}
+
+.job ul{
+list-style:disc;
+padding-left:17px;
+}
+
+.job ul li{
+font-size:9.5pt;
+color:var(--mid);
+line-height:1.5;
+margin-bottom:3px;
+}
+
+/* KEY ACHIEVEMENTS */
+
+.dot-list{
+list-style:disc;
+padding-left:17px;
+}
+
+.dot-list li{
+font-size:9.5pt;
+color:var(--mid);
+line-height:1.65;
+}
+
+/* SKILLS */
+
+.subsection-title{
+font-family:'DM Serif Display',Georgia,serif;
+font-size:12pt;
+font-weight:400;
+color:var(--dark);
+border-bottom:1px solid var(--rule);
+padding-bottom:3px;
+margin:16px 0 10px;
+}
+
+.tag-list{
+display:flex;
+flex-wrap:wrap;
+gap:5px;
+}
+
+.tag{
+font-size:8pt;
+font-weight:500;
+color:var(--blue);
+background:rgba(37,99,199,.09);
+border-radius:3px;
+padding:3px 8px;
+}
+
+/* EDUCATION */
+
+.edu-degree{font-size:10pt;font-weight:700;color:var(--dark);}
+.edu-school{font-size:9.5pt;font-weight:500;color:var(--blue);margin-top:2px;}
+
+.edu-meta{
+font-size:8.5pt;
+color:var(--light);
+margin-top:5px;
+display:flex;
+align-items:center;
+flex-wrap:wrap;
+gap:4px;
+}
+
+/* MOBILE */
+
+@media(max-width:580px){
+body{padding:0;background:#fff;}
+.page{box-shadow:none;}
+header{padding:20px 18px 16px;}
+header h1{font-size:22pt;}
+.title-line{font-size:9pt;}
+.section{padding:18px;}
+.section-title{font-size:13pt;}
+}
+
+@media print{
+body{background:white;padding:0;}
+.page{box-shadow:none;width:100%;}
+}
+
+</style>
 </head>
+
 <body>
+
 <div class="page">
 
-  <!-- HEADER -->
-  <header>
-    <h1>Christopher Kenreigh</h1>
-    <div class="title-line">Senior Product Designer | Consumer-Facing Insurtech &amp; Fintech UX | Mobile-First Design | AI-Integrated Experiences | Design Systems</div>
-    <div class="contact">
-      <span style="color: #212121; font-weight:700">480-206-2145</span>
-      <span>|</span>
-      <a href="mailto:c.kenreigh@gmail.com" style="font-weight:800;">c.kenreigh@gmail.com</a>
-      <span>|</span>
-      <a href="https://www.linkedin.com/in/kenreigh/" target="_blank">LinkedIn</a>
-      <span>|</span>
-      <a href="https://www.uxapex.com/portfolioa4" target="_blank">Portfolio</a>
-    </div>
-  </header>
+<header>
 
-  <!-- BODY -->
-  <div class="body">
+<h1>Christopher Kenreigh</h1>
 
-    <!-- MAIN EXPERIENCE -->
-    <main class="main">
-      <h2 class="section-title">Experience</h2>
+<div class="title-line">
+Senior Design Operations Manager | Insurtech Platforms | End-to-End Product Design | Digital Applications | Data-Driven UX
+</div>
 
-      <div class="job">
-        <div class="job-title">Senior Product Designer (Principal)</div>
-        <a class="job-company" href="https://www.plexusworldwide.com" target="_blank">Plexus Worldwide</a>
-        <div class="job-meta">
-          <span class="material-symbols-outlined">calendar_month</span>
-          05/2024 – Present
-          <span class="material-symbols-outlined">location_on</span>
-          Phoenix, AZ | Office
-        </div>
-        <ul>
-          <li>Led end-to-end product design for a multi-product consumer marketplace—200,000+ users, 3 regions—owning the full design lifecycle from user research through mobile-first interaction design, A/B testing, and post-conversion engagement</li>
-          <li>Translated complex, data-heavy consumer flows—subscription mechanics, tiered membership, regulatory compliance, multi-step checkout—into simple, elegant, user-friendly workflows; reduced checkout abandonment 43%</li>
-          <li>Leveraged quantitative analytics (Power BI) and user research methodologies to identify behavioral insights and validate prototypes; partnered with PMs, Engineers, and Data Scientists to align design decisions with measurable business outcomes</li>
-          <li>Shipped an AI-powered LLM platform integrating agentic AI into consumer decision flows; reversed operating margin from –17% to +2% in four months through thoughtful, responsible AI-integrated UX</li>
-          <li>Architected scalable Figma design system (6-tool consolidation); achieved 60–90% org-wide reuse, 50% faster delivery, 35% sprint velocity increase via AI-assisted prototyping workflows</li>
-        </ul>
-      </div>
+<div class="contact">
+<span class="phone">480-206-2145</span>
+<span class="sep">|</span>
+<a href="mailto:c.kenreigh@gmail.com">c.kenreigh@gmail.com</a>
+<span class="sep">|</span>
+<a href="https://www.linkedin.com/in/kenreigh/">LinkedIn</a>
+<span class="sep">|</span>
+<a href="https://www.uxapex.com/portfolioa5">Portfolio</a>
+<span class="sep">|</span>
+Phoenix, AZ
+</div>
 
-      <div class="job">
-        <div class="job-title">Senior Product Designer</div>
-        <a class="job-company" href="https://www.freeportmcmoran.com" target="_blank">Freeport-McMoRan</a>
-        <div class="job-meta">
-          <span class="material-symbols-outlined">calendar_month</span>
-          08/2022 – 10/2023
-          <span class="material-symbols-outlined">location_on</span>
-          Phoenix, AZ | Hybrid
-        </div>
-        <ul>
-          <li>Translated complex, data-heavy regulated digital tools into responsive web and mobile interfaces improving worker efficiency 30%; applied rigorous information architecture to simplify dense operational data</li>
-          <li>Facilitated 10+ discovery and user research workshops to define user needs; partnered with cross-functional PMs and engineering in full Agile delivery lifecycle</li>
-          <li>Presented data-driven UX roadmaps to C-suite, securing approval for 5 major product releases; built scalable MUI React design system adopted across web, iOS, and Android</li>
-        </ul>
-      </div>
+</header>
 
-      <div class="job">
-        <div class="job-title">Senior Product Designer</div>
-        <a class="job-company" href="https://www.opentechalliance.com" target="_blank">OpenTech Alliance</a>
-        <div class="job-meta">
-          <span class="material-symbols-outlined">calendar_month</span>
-          05/2021 – 08/2022
-          <span class="material-symbols-outlined">location_on</span>
-          Phoenix, AZ | Hybrid
-        </div>
-        <ul>
-          <li>Redesigned consumer-facing Point of Sale kiosk applying mobile-first interaction design and conversion best practices—boosted task completion rates 75%</li>
-          <li>Designed compliant consumer data capture flows adhering to regulatory requirements—100% risk elimination; directly comparable to trust-sensitive fintech and insurance data flows</li>
-          <li>Enhanced consumer marketplace journeys through data-driven UX optimizations and A/B tested prototypes, improving transaction fulfillment 25%</li>
-        </ul>
-      </div>
 
-      <div class="job">
-        <div class="job-title">UX Design Lead</div>
-        <a class="job-company" href="https://www.siemens.com" target="_blank">Siemens</a>
-        <div class="job-meta">
-          <span class="material-symbols-outlined">calendar_month</span>
-          07/2020 – 05/2021
-          <span class="material-symbols-outlined">location_on</span>
-          Phoenix, AZ | Remote
-        </div>
-        <ul>
-          <li>Unified design systems across 4 simultaneous product initiatives in a regulated, data-heavy industrial environment; designed complex data visualization interfaces requiring precise information architecture</li>
-          <li>Reduced internal documentation needs 50% through component guidelines enabling engineering teams to build without friction; secured approval for 2 high-impact initiatives</li>
-        </ul>
-      </div>
+<div class="section">
 
-      <div class="job">
-        <div class="job-title">Senior UX Designer</div>
-        <a class="job-company" href="https://www.glynlyon.com" target="_blank">Glynlyon Inc</a>
-        <div class="job-meta">
-          <span class="material-symbols-outlined">calendar_month</span>
-          02/2014 – 04/2019
-          <span class="material-symbols-outlined">location_on</span>
-          Phoenix, AZ | Office
-        </div>
-        <ul>
-          <li>Designed WCAG and ADA-compliant inclusive consumer experiences across multi-platform digital products; applied iOS and Android platform guidelines for accessible, intuitive interfaces</li>
-          <li>Drove data-informed design decisions through user research methodologies and usability testing; roadmapped UI features increasing ease of use 65%</li>
-          <li>Led cross-functional Design Thinking workshops to define user needs, map consumer journeys, and align product strategy across web and mobile platforms</li>
-        </ul>
-      </div>
-    </main>
+<h2 class="section-title">Summary</h2>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
+<p class="summary-quote">
+"Senior product designer with 12+ years designing digital platforms that power complex consumer applications, financial workflows, and regulated enterprise systems. Expert translating business logic, underwriting rules, and operational workflows into intuitive SaaS product experiences across web and mobile."
+</p>
 
-      <div class="sidebar-section">
-        <h2 class="section-title">Summary</h2>
-        <p class="summary-quote" style="color: #212121; font-weight:700">"Senior product designer specializing in translating complex, data-heavy consumer experiences into simple, elegant, mobile-first workflows—with a proven record of AI-integrated design, measurable conversion impact, and scalable design systems across marketplace and fintech-adjacent platforms."</p>
-        <ul class="summary-bullets">
-          <li>12+ years end-to-end consumer product design</li>
-          <li>Simplifying data-heavy flows: insurance-adjacent, subscription, and high-stakes consumer decisions</li>
-          <li>A/B testing, quantitative analytics, user research—data informs every decision</li>
-          <li>AI-integrated UX: LLM platforms, agentic AI, responsible AI design</li>
-          <li>Design systems at 60–90% org reuse</li>
-          <li>Cross-functional: PMs, Engineers, Data Scientists</li>
-          <li>Figma, WCAG, iOS/Android, mobile-first</li>
-        </ul>
-      </div>
+<ul class="summary-bullets">
+<li>12+ years designing complex digital products including SaaS platforms, transactional flows, and consumer-facing applications</li>
+<li>Deep experience designing onboarding, identity verification, application workflows, checkout flows, and post-conversion engagement</li>
+<li>Strong collaboration with product managers and engineering teams delivering production-ready designs across agile development cycles</li>
+<li>Architect of scalable design systems used across multiple web and mobile platforms</li>
+<li>Data-driven designer using experimentation, analytics, and user research to guide product decisions</li>
+<li>Hands-on with emerging AI tools, automation workflows, and experimentation platforms accelerating product development</li>
+</ul>
 
-      <div class="sidebar-section">
-        <h2 class="section-title">Key Achievements</h2>
-        <ul class="dot-list">
-          <li>43% checkout abandonment reduction</li>
-          <li>–17% → +2% margin via AI platform</li>
-          <li>60–90% design system org reuse</li>
-          <li>75% task completion rate lift</li>
-          <li>100% regulatory compliance on consumer data flows</li>
-          <li>10+ C-suite approvals secured</li>
-        </ul>
-      </div>
+</div>
 
-      <div class="sidebar-section">
-        <h2 class="section-title">Skills</h2>
-        <div class="tag-list">
-          <span class="tag">End-to-End Product Design</span>
-          <span class="tag">Mobile-First UX</span>
-          <span class="tag">Data-Heavy Flow Simplification</span>
-          <span class="tag">Figma</span>
-          <span class="tag">Design Systems</span>
-          <span class="tag">A/B Testing</span>
-          <span class="tag">User Research</span>
-          <span class="tag">Quantitative Analytics</span>
-          <span class="tag">Marketplace UX</span>
-          <span class="tag">Insurtech &amp; Fintech Flows</span>
-          <span class="tag">WCAG Accessibility</span>
-          <span class="tag">iOS &amp; Android</span>
-          <span class="tag">Conversion Optimization</span>
-          <span class="tag">Coded Prototypes</span>
-          <span class="tag">MUI React</span>
-          <span class="tag">Agile / Scrum</span>
-          <span class="tag">Information Architecture</span>
-          <span class="tag">Design Tokens</span>
-        </div>
-      </div>
+<!-- EXPERIENCE (UNCHANGED STRUCTURE WITH UPDATED TEXT) -->
 
-      <div class="sidebar-section">
-        <h2 class="section-title">AI &amp; Emerging Tech</h2>
-        <div class="tag-list">
-          <span class="tag">LLM-Based Workflows</span>
-          <span class="tag">Agentic AI Design</span>
-          <span class="tag">RAG Systems</span>
-          <span class="tag">Multimodal AI</span>
-          <span class="tag">AI-Integrated UX</span>
-          <span class="tag">Responsible AI</span>
-          <span class="tag">AI-Powered Consumer Features</span>
-        </div>
-      </div>
+<div class="section">
+<h2 class="section-title">Experience</h2>
 
-      <div class="sidebar-section">
-        <h2 class="section-title">Education</h2>
-        <div class="edu-degree">Bachelor of Art</div>
-        <div class="edu-school">The Art Institute of Phoenix</div>
-        <div class="edu-meta">
-          <span class="material-symbols-outlined">calendar_month</span>
-          09/2002 – 09/2005
-          <span class="material-symbols-outlined">location_on</span>
-          Phoenix, AZ
-        </div>
-        <div style="margin-top:10px; font-size:8pt; color:var(--mid); line-height:1.6;">
-          <strong style="color:var(--dark);">Certs:</strong> Agile / PM (NASBA 891/1000) · AI Test Automation (100%) · Microsoft Data &amp; Business (95%) · CompTIA A+ &amp; Net+
-        </div>
-      </div>
+<div class="job">
+<div class="job-title">Senior Design Operations Manager (Principal)</div>
+<a class="job-company" href="https://www.plexusworldwide.com">Plexus Worldwide</a>
+<div class="job-meta">05/2024 – Present · Phoenix, AZ</div>
+<ul>
+<li>Lead design of large-scale digital commerce and membership platform serving global users across web and mobile applications</li>
+<li>Redesigned onboarding, enrollment, and checkout workflows using behavioral analytics to reduce abandonment 43%</li>
+<li>Translate complex business logic, compliance requirements, and operational constraints into scalable product experiences</li>
+<li>Architected a unified design system enabling multiple engineering teams to build consistent interfaces</li>
+<li>Facilitate cross-functional workshops with product managers and engineering to align roadmap priorities and user needs</li>
+<li>Introduced AI-assisted design workflows improving team velocity 35%</li>
+</ul>
+</div>
 
-    </aside>
-  </div><!-- /body -->
-</div><!-- /page -->
+<div class="job">
+<div class="job-title">Senior Product Designer</div>
+<a class="job-company" href="https://www.freeportmcmoran.com">Freeport-McMoRan</a>
+<div class="job-meta">08/2022 – 10/2023 · Phoenix, AZ</div>
+<ul>
+<li>Designed enterprise SaaS tools used by operational teams across global infrastructure projects</li>
+<li>Conducted discovery research translating technical workflows into usable digital interfaces</li>
+<li>Developed scalable component system implemented across React applications</li>
+<li>Collaborated with engineering teams delivering responsive web and mobile experiences improving operational efficiency 30%</li>
+</ul>
+</div>
+
+<div class="job">
+<div class="job-title">Senior Product Designer</div>
+<a class="job-company" href="https://www.opentechalliance.com">OpenTech Alliance</a>
+<div class="job-meta">05/2021 – 08/2022 · Phoenix, AZ</div>
+<ul>
+<li>Designed SaaS interfaces supporting automated commerce workflows and customer lifecycle interactions</li>
+<li>Redesigned kiosk interface improving task completion 75%</li>
+<li>Introduced design systems improving product consistency and engineering efficiency</li>
+<li>Used behavioral data to optimize user journeys improving fulfillment 25%</li>
+</ul>
+</div>
+
+<div class="job">
+<div class="job-title">UX Design Lead</div>
+<a class="job-company" href="https://www.siemens.com">Siemens</a>
+<div class="job-meta">07/2020 – 05/2021 · Remote</div>
+<ul>
+<li>Led UX strategy across enterprise engineering platforms used by global industrial teams</li>
+<li>Unified fragmented interface frameworks into scalable component systems</li>
+<li>Produced design documentation enabling engineering teams to build interfaces without design bottlenecks</li>
+</ul>
+</div>
+
+<div class="job">
+<div class="job-title">Senior UX Designer</div>
+<a class="job-company" href="https://www.glynlyon.com">Glynlyon Inc</a>
+<div class="job-meta">02/2014 – 04/2019 · Phoenix, AZ</div>
+<ul>
+<li>Designed WCAG-compliant digital learning platforms used across web and mobile devices</li>
+<li>Led user research and usability testing improving usability metrics 65%</li>
+<li>Facilitated design thinking workshops aligning product and engineering teams around user needs</li>
+</ul>
+</div>
+
+</div>
+
+<!-- ACHIEVEMENTS -->
+
+<div class="section">
+<h2 class="section-title">Key Achievements</h2>
+<ul class="dot-list">
+<li>43% reduction in checkout abandonment through data-driven UX redesign</li>
+<li>Implemented scalable design systems enabling 50% faster product delivery</li>
+<li>Secured executive approval for 10+ major product initiatives through strategic design presentations</li>
+<li>Delivered 100% compliant user data workflows across regulated product environments</li>
+</ul>
+</div>
+
+<!-- SKILLS -->
+
+<div class="section">
+<h2 class="section-title">Skills</h2>
+<div class="tag-list">
+<span class="tag">Product Design</span>
+<span class="tag">SaaS Platforms</span>
+<span class="tag">Application Workflows</span>
+<span class="tag">User Research</span>
+<span class="tag">Design Systems</span>
+<span class="tag">Figma</span>
+<span class="tag">Prototyping</span>
+<span class="tag">Interaction Design</span>
+<span class="tag">Experimentation</span>
+<span class="tag">Data-Driven UX</span>
+<span class="tag">Accessibility</span>
+<span class="tag">Agile Product Development</span>
+</div>
+</div>
+
+<!-- AI -->
+
+<div class="section">
+<h2 class="section-title">AI & Emerging Technology</h2>
+<div class="tag-list">
+<span class="tag">LLM Workflows</span>
+<span class="tag">Agentic AI</span>
+<span class="tag">RAG Systems</span>
+<span class="tag">AI-Assisted Prototyping</span>
+<span class="tag">Responsible AI</span>
+</div>
+</div>
+
+<!-- EDUCATION -->
+
+<div class="section">
+
+<h2 class="section-title">Education & Certifications</h2>
+
+<div class="edu-degree">Bachelor of Art – Information Design & Technology</div>
+<div class="edu-school">The Art Institute of Phoenix</div>
+
+<div class="edu-meta">
+09/2002 – 09/2005 · Phoenix, AZ
+</div>
+
+<div style="margin-top:12px;font-size:9pt;color:var(--mid);line-height:1.6;">
+<strong style="color:var(--dark);">Additional:</strong>
+Project Management & Agile Workflows (NASBA) · Microsoft Data & Software Development · TestMu AI Test Automation — LambdaTest · CompTIA A+ & Network+ · LinkedIn Learning Business Analysis & Communication
+</div>
+
+</div>
+
+</div>
 </body>
 </html>`;
 
